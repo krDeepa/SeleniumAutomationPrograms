@@ -56,7 +56,7 @@ public class SeleniumIncognito {
 		driver.findElement(By.id("emailid")).sendKeys("deepa@dkr.com");
 		Thread.sleep(1000);
 		driver.findElement(By.className("bootbutton")).click();
-		
+		driver.quit();
 	}
 
 }
