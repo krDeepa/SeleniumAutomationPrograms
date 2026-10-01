@@ -15,7 +15,8 @@ public class SeleniumIncognito {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions option=new ChromeOptions();
 		//option.addArguments("--incognito");
-		option.addArguments("--headless=new");
+		option.addArguments("--headless=new"); // Runs Chrome without GUI
+		option.addArguments("--disable-gpu");
 		WebDriver driver=new ChromeDriver(option);
 		driver.manage().window().maximize();
 		String url="https://selenium-prd.firebaseapp.com/";
